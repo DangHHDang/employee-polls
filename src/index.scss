@@ -1,0 +1,35 @@
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/derived-variables";
+
+$body-background-color: #000000;
+$body-color: $white;
+
+@import "bulma";
+
+
+.wrapper{
+    padding: 20px;
+}
+.poll{
+    display: flex;
+    justify-content: center;
+}
+.columns-poll{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+
+}
+
+.signout-btn{
+    background-color: #0a0a0a;
+    cursor: pointer;
+    padding-left: 10px;
+}
