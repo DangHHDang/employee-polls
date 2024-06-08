@@ -27,10 +27,14 @@ Object {
                 class="inputContainer"
               >
                 <label>
-                  Username
+                  <p>
+                    Username
+                  </p>
                   <input
+                    aria-label="username"
                     class="inputBox"
-                    data-testid="loginForm-username"
+                    data-testid="username"
+                    id="username"
                     name="username"
                     placeholder="Enter your User Name here"
                     value=""
@@ -45,10 +49,14 @@ Object {
                 class="inputContainer"
               >
                 <label>
-                  Password
+                  <p>
+                    Password
+                  </p>
                   <input
+                    aria-label="password"
                     class="inputBox"
-                    data-testid="loginForm-password"
+                    data-testid="password"
+                    id="password"
                     name="password"
                     placeholder="Enter your password here"
                     type="password"
@@ -59,7 +67,8 @@ Object {
               <br />
               <button
                 class="button is-primary"
-                name="log_in"
+                data-testid="sign-in"
+                type="submit"
               >
                 Login
               </button>
@@ -92,10 +101,14 @@ Object {
               class="inputContainer"
             >
               <label>
-                Username
+                <p>
+                  Username
+                </p>
                 <input
+                  aria-label="username"
                   class="inputBox"
-                  data-testid="loginForm-username"
+                  data-testid="username"
+                  id="username"
                   name="username"
                   placeholder="Enter your User Name here"
                   value=""
@@ -110,10 +123,14 @@ Object {
               class="inputContainer"
             >
               <label>
-                Password
+                <p>
+                  Password
+                </p>
                 <input
+                  aria-label="password"
                   class="inputBox"
-                  data-testid="loginForm-password"
+                  data-testid="password"
+                  id="password"
                   name="password"
                   placeholder="Enter your password here"
                   type="password"
@@ -124,7 +141,8 @@ Object {
             <br />
             <button
               class="button is-primary"
-              name="log_in"
+              data-testid="sign-in"
+              type="submit"
             >
               Login
             </button>

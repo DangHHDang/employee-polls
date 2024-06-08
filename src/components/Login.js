@@ -48,7 +48,7 @@ const Login = ({ users, dispatch }) => {
           <h2 className="is-size-2 my-5">Login</h2>
 
 
-          <form className="my-5">
+          <form className="my-5" onSubmit={handleLogin}>
 
             <br />
             <div className={'inputContainer'}>
@@ -61,6 +61,8 @@ const Login = ({ users, dispatch }) => {
                   onChange={(ev) => setUserName(ev.target.value)}
                   className={'inputBox'}
                   aria-label="username"
+                  id="username"
+                  data-testid="username"
                 />
               </label>
               <p className="errorLabel">{emailError}</p>
@@ -72,18 +74,20 @@ const Login = ({ users, dispatch }) => {
                 <input
                   value={password}
                   name="password"
+                  id="password"
                   placeholder="Enter your password here"
                   onChange={(ev) => setPassword(ev.target.value)}
                   className={'inputBox'}
                   type="password"
                   aria-label="password"
+                  data-testid="password"
                 />
               </label>
               {passwordError && (<p className="errorLabel">{passwordError}</p>)}
             </div>
-            {loginError && (<p className="errorLabel">{loginError}</p>)}
+            {loginError && (<p className="errorLabel" data-testid="error-header">{loginError}</p>)}
             <br />
-            <button name="log_in" className="button is-primary" onClick={handleLogin}>
+            <button type="submit" className="button is-primary" data-testid="sign-in">
               Login
             </button>
           </form>
